@@ -800,6 +800,13 @@
       }
     }
   }
+  .hover\:ml-5 {
+    &:hover {
+      @media (hover: hover) {
+        margin-left: calc(var(--spacing) * 5);
+      }
+    }
+  }
   .hover\:bg-\[\#1\] {
     &:hover {
       @media (hover: hover) {
@@ -970,6 +977,15 @@
   .lg\:text-left {
     @media (width >= 64rem) {
       text-align: left;
+    }
+  }
+  .lg\:hover\:-mt-5 {
+    @media (width >= 64rem) {
+      &:hover {
+        @media (hover: hover) {
+          margin-top: calc(var(--spacing) * -5);
+        }
+      }
     }
   }
 }
